@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "CSS Inject",
+  "version": "2.3.3",
+  "permissions": ["<all_urls>"],
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "inject.js" ],
+    "matches": [ "<all_urls>" ],
+    "run_at": "document_start"
+  }]
+}
